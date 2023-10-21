@@ -1,0 +1,101 @@
+.Banner {
+    width: 550px;
+    height: 320px;
+
+
+}
+
+.Hero {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.name {
+    margin-left: 130px;
+
+}
+
+.Learn-button {
+    background-color: #c2f136;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-color: #c2f136;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Learn-button:hover {
+    background-color: black;
+    color: #c2f136;
+
+}
+
+.image-div {
+    display: flex;
+}
+
+/* ---------------------------MEDIA QUERIES FOR MOBILE------------------------------ */
+
+@media only screen and (max-width:480px) {
+
+    .name {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .Hero {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .Learn-button {
+        margin-left: 108px;
+    }
+
+    .Banner {
+        width: 310px;
+        height: 200px;
+    }
+}
+
+/* -----------TABLET------------------- */
+@media only screen and (min-width:768px) {
+
+    .name {
+
+        margin-left: 77px;
+    }
+
+    .Banner {
+        width: 403px;
+        height: 268px;
+    }
+}
+
+/* ----------->480px <768px------------------- */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .Hero{
+        flex-direction: column-reverse;
+    }
+    .Banner {
+        width: 417px;
+        height: 243px;
+    }
+    .name{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .Learn-button{
+        margin-left: 123px;
+    }
+}

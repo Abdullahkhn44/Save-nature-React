@@ -1,0 +1,129 @@
+.navbar {
+    height: 60px;
+    background-color:#c2f136;
+    position: relative;
+    box-shadow: 0px 5px 20px;
+  }
+
+  .navbar-container{
+    margin: 0 auto;
+
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-elements ul{
+    list-style-type: none;
+    display: flex;
+  }
+  .nav-elements li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+  }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+  
+.nav-elements ul li :hover{
+  color:rgb(97, 70, 251);
+  font-size: larger;
+}
+.nav-elements ul a.active {
+  color: #0900b2;
+  font-weight: 500;
+  position: relative;
+}
+
+/* ------------------------------MEDIA QUERIES------------------------ */
+
+/* ------------------------------MOBILE DEVICES----------------------- */
+
+@media only screen and (max-width:480px) {
+  .navbar{
+    width: 428px;
+    
+
+  }
+  .nav-elements ul a{
+    font-size: medium;
+ 
+  
+  }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 20px;
+   
+  }  
+  .nav-elements ul{
+    display: none;
+  }
+  .display-inline {
+    justify-content: space-around;
+    display: flex;
+    background-color: #64f38f;
+  }
+  .nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-menu li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+  }
+  .display-none {
+    display: none;
+  }
+  
+}
+
+/* -----------TABLET------------------- */
+@media only screen and (min-width:768px) {
+  .navbar{
+ 
+    width: 100%;
+  }
+  .M-button{
+    display: none;
+  }
+.nav-menu{
+  display: none;
+}
+ 
+}
+
+/* ----------->480px <768px------------------- */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .navbar{
+    width: 100%;
+  }
+  .nav-elements ul{
+    display: none;
+  }
+  .display-inline {
+    justify-content: space-around;
+    display: flex;
+    background-color: #64f38f;
+  }
+  .nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-menu li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+  }
+  .display-none {
+    display: none;
+  }
+}
